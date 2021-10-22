@@ -10,20 +10,22 @@ const jwtCheck = require('./src/middleware/jwt_check');
 const {
   createUserController,
   getUserController,
-  getListUserController,
-  setUpdateUserController
+  getAllUserController,
+  setUpdateUserController,
+  setRemoveUserController
 } = require("./src/controllers/users/index");
-
 connectDB();
 
-//EFETUA INTERCEPTAÇÃO DE REQUEST E TRATA JSON
+//Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+//EndPoints
 app.post('/api/user/', createUserController);
 app.get('/api/user/:id', getUserController);
-app.get('/api/user/', getListUserController);
+app.get('/api/user/', getAllUserController);
 app.put('/api/user/:id', jwtCheck, setUpdateUserController);
+app.delete('/api/user/:id', setRemoveUserController);
 
 app.post('/api/jwt', createJwtController);
 

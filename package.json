@@ -8,7 +8,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.11"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.0.1"
+  },
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
