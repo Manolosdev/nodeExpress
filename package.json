@@ -1,0 +1,31 @@
+{
+  "name": "nodeexpress",
+  "version": "1.0.0",
+  "description": "Estudo de nodeJS e afins",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manolosdev/nodeExpress.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongoose"
+  ],
+  "author": "Manoel Louro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Manolosdev/nodeExpress/issues"
+  },
+  "homepage": "https://github.com/Manolosdev/nodeExpress#readme"
+}
